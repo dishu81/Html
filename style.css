@@ -1,0 +1,11 @@
+.first{
+	border: 2px solid black;
+		color:navy blue; 
+		 width: 280px;
+		 margin-left: 440px;
+		 margin-top: 80px;} 
+		 *{
+		 	margin: 3px;
+		 	padding: 2px;
+		 }
+body{background-image: url("d1.jpg");}

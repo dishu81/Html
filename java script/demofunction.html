@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		*{
+			margin: 3px;
+			background-color: red;
+			border:3px solid black;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<div onmouseenter="work()" onmouseleave="work1()" onclick="work2()" ondblclick="work3()" id="abcd">
+
+	<p>div1</p>
+</div>
+<script > 
+function work( ){
+document.getElementById("abcd").innerHTML="mouseenter"
+}
+function work1(){
+	document.getElementById("abcd").innerHTML="mouseleave"
+}
+function work2()
+{
+	document.getElementById("abcd").innerHTML="mouseclick"
+}
+function work3()
+{
+	document.getElementById("abcd").innerHTML="doubleclick"
+}
+</script>
+</body>
+</html>
