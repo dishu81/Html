@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        #panel,#flip
+        {
+            padding: 5px;
+            text-align: center;
+            background-color: yellowgreen;
+            border: 3px solid red;
+        }
+        #panel
+        {
+            padding: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="flip">click to slide up</div>
+    <div id="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores itaque facere dolore odio deserunt ipsam, dolorem libero quidem quod tempore delectus ipsum doloribus veritatis assumenda, in id! Suscipit, dolores.</div>
+    <script>
+        $(document).ready(function()
+            {
+                $("#flip").click(function(){
+                $("#panel").slideUp("slow")
+            })
+            })
+    </script>
+</body>
+</html>
